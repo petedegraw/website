@@ -59,3 +59,17 @@ p {
 a {
   color: #983fec;
 }
+
+.view {
+  display: flex;
+  flex: 1 1 0%;
+  flex-flow: row nowrap;
+  place-content: stretch flex-start;
+  align-items: stretch;
+  flex-direction: column;
+}
+@media (min-width: 900px) {
+  .view {
+    flex-direction: row;
+  }
+}

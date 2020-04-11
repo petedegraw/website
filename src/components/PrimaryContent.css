@@ -1,0 +1,26 @@
+.PrimaryContent {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+}
+.PrimaryContent h1.home {
+  font-size: 3em;
+}
+@media (min-width: 900px) {
+  .PrimaryContent {
+    padding-left: 120px;
+    max-width: 40vw;
+  }
+  .PrimaryContent.web {
+    width: 40%;
+    max-width: auto;
+  }
+}
+h1.about {
+  color: gold;
+}
+h1.web {
+  color: aqua;
+}
