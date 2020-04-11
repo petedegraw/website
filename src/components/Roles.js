@@ -71,9 +71,9 @@ function Roles(props) {
     <AnimatePresence>
       <motion.div
         className='Roles'
-        whileHover={{ scale: 10, rotate: 360 }}
+        // whileHover={{ scale: 10, rotate: 360 }}
         // whileTap={{ scale: 0.6, rotate: -360, borderRadius: "100%" }}
-        transition={{ duration: 3, mass: 1, type: 'spring' }}
+        transition={{ delay: .3, duration: 3, mass: .75, type: 'spring' }}
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         exit={{ scale: 0 }}
