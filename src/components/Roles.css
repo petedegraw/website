@@ -1,6 +1,10 @@
 .Roles {
   padding: 0;
   margin: 0;
+  position: relative;
+}
+.Roles .chart {
+  position: relative;
 }
 @media (min-width: 900px) {
   .Roles {
