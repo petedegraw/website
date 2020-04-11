@@ -5,11 +5,15 @@
   justify-content: center;
   padding: 30px;
 }
+.PrimaryContent.web {
+  min-height: 50vh;
+}
 .PrimaryContent h1.home {
   font-size: 3em;
 }
 @media (min-width: 900px) {
   .PrimaryContent {
+    min-height: 80vh;
     padding-left: 120px;
     max-width: 40vw;
   }
