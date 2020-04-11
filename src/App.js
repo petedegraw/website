@@ -7,15 +7,19 @@ import {
 } from 'react-router-dom';
 import PrimaryContent from './components/PrimaryContent';
 import CONTENT from './data/Content';
+import Roles from './components/Roles';
 
 export default function App() {
-  const getData = (str) => CONTENT.pages.find(p => p.page === str)
+  const getData = (str) => CONTENT.pages.find(p => p.page === str);
   return (
     <Router>
       <div className='App'>
         <Switch>
           <Route path='/web'>
-            <PrimaryContent data={getData('web')} />
+            <div className='view'>
+              <PrimaryContent data={getData('web')} />
+              <Roles />
+            </div>
           </Route>
           <Route path='/about'>
             <PrimaryContent data={getData('about')} />
