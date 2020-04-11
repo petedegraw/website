@@ -1,16 +1,22 @@
-.Intro {
+.PrimaryContent {
   min-height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 30px;
 }
-.Intro h1.home {
+.PrimaryContent h1.home {
   font-size: 3em;
 }
 @media (min-width: 768px) {
-  .Intro {
+  .PrimaryContent {
     padding-left: 120px;
     max-width: 45vw;
   }
+}
+h1.about {
+  color: gold;
+}
+h1.web {
+  color: aqua;
 }

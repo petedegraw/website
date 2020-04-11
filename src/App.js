@@ -5,23 +5,23 @@ import {
   Switch,
   Route
 } from 'react-router-dom';
-import Intro from './components/Intro';
-import Web from './components/Web';
-import About from './components/About';
+import PrimaryContent from './components/PrimaryContent';
+import CONTENT from './data/Content';
 
 export default function App() {
+  const getData = (str) => CONTENT.pages.find(p => p.page === str)
   return (
     <Router>
       <div className='App'>
         <Switch>
           <Route path='/web'>
-            <Web />
+            <PrimaryContent data={getData('web')} />
           </Route>
           <Route path='/about'>
-            <About />
+            <PrimaryContent data={getData('about')} />
           </Route>
           <Route path='/'>
-            <Intro />
+            <PrimaryContent data={getData('intro')} />
           </Route>
         </Switch>
       </div>
