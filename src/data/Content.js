@@ -81,6 +81,8 @@ const CONTENT = {
         'tryyyyyyyy iiiiiiiiit'
       ]
     }
-  ]
+  ],
+  roles_human: ['Front End','Back End','Product Owner','Manager','Full Stack'],
+  roles_machine: ['front-end','back-end','product-owner','manager','full-stack']
 }
 export default CONTENT;

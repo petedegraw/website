@@ -1,13 +1,15 @@
 .Roles {
-  min-height: 80vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 30px;
-  margin: 0 auto;
+  padding: 0;
+  margin: 0;
 }
 @media (min-width: 900px) {
   .Roles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    min-height: 80vh;
+    padding: 30px;
     width: 70%;
   }
 }
