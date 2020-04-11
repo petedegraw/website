@@ -1,0 +1,32 @@
+.Button {
+  font-size: 1.3em;
+  font-family: 'Colfax Bold';
+  padding-bottom: .625em;
+  padding-top: .625em;
+  min-width: 180px;
+  margin-right: 1em;
+  transition: all ease 150ms;
+}
+.Button + .Button {
+  margin-right: 0;
+}
+.Button.default {
+  background: #fff;
+  border: 3px solid #fff;
+  color: #000;
+}
+.Button.default:hover {
+  background: #fff;
+  border: 3px solid #983fec;
+  color: #983fec;
+}
+.Button.primary {
+  background: #983fec;
+  border: 3px solid #983fec;
+  color: #fff;
+}
+.Button.primary:hover {
+  background: #fff;
+  border: 3px solid #fff;
+  color: #983fec;
+}

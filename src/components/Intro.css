@@ -1,0 +1,12 @@
+.Intro {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+}
+@media (min-width: 768px) {
+  .Intro {
+    padding-left: 120px;
+  }
+}

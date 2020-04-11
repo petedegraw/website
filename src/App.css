@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'Colfax Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Colfax Regular'), url('./fonts/Colfax-Regular.woff') format('woff');
+}
+  
+@font-face {
+  font-family: 'Colfax Regular Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Colfax Regular Italic'), url('./fonts/Colfax-RegularItalic.woff') format('woff');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'Colfax Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Colfax Medium'), url('./fonts/Colfax-Medium.woff') format('woff');
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: 'Colfax Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Colfax Bold'), url('./fonts/Colfax-Bold.woff') format('woff');
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@font-face {
+  font-family: 'Colfax Black';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Colfax Black'), url('./fonts/Colfax-Black.woff') format('woff');
 }
 
-.App-link {
-  color: #61dafb;
+body {
+  background: #000;
+  color: #fff;
+  font-family: 'Colfax Regular', sans-serif;
+  font-size: 18px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+  font-family: 'Colfax Medium', sans-serif;
+  font-size: 2em;
+  margin: 0 0 .5em;
+}
+
+p {
+  margin: 0 0 .5em;
+}
+
+.lead {
+  font-size: 1.444em;
+  margin-bottom: .75em;
+}
+
+a {
+  color: #983fec;
 }

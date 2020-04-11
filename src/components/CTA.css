@@ -1,0 +1,51 @@
+.CTA {
+  color: #983fec;
+  font-family: 'Colfax Bold';
+  font-size: 1.3em;
+  padding: .625em .5em .625em 0;
+  min-width: 180px;
+  margin-right: 2em;
+  text-decoration: none;
+  transition: all ease 150ms;
+  position: relative;
+}
+.title {
+  position: absolute;
+  bottom: -.5em;
+  color: white;
+  font-size: 0px;
+  font-family: 'Colfax Regular';
+  min-width: 1000px;
+  left: 0;
+  transition: all ease 150ms;
+}
+.CTA:hover .title {
+  font-size: .625em;
+}
+.CTA:after {
+  content: '›';
+  display: inline-block;
+  transform: translateX(.25em);
+  transition: transform ease-in-out 150ms;
+}
+.CTA:hover:after {
+  transform: translateX(.5em);
+}
+.CTA.default {
+  color: #983fec;
+}
+.CTA.default:hover {
+  color: #ec3fa4;
+}
+.CTA.primary {
+  color: #fff;
+}
+.CTA.primary:hover {
+  color: #983fec;
+}
+.CTA.hot {
+  color: #ec3fa4;
+}
+.CTA.hot:hover {
+  color: #983fec;
+}
