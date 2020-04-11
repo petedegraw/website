@@ -10,17 +10,17 @@ const ABOUT = {
         'back'
       ],
     },
-    {
-      id: 2,
-      link: '#',
-      text: '???',
-      titles: [
-        'you really should click this!',
-        'it\'s tempting to click this',
-        'you really want to click this, don\'t you?',
-        'gotta wonder what this does when you click it'
-      ],
-    }
+    // {
+    //   id: 2,
+    //   link: '#',
+    //   text: '???',
+    //   titles: [
+    //     'you really should click this!',
+    //     'it\'s tempting to click this',
+    //     'you really want to click this, don\'t you?',
+    //     'gotta wonder what this does when you click it'
+    //   ],
+    // }
   ]
 }
 export default ABOUT;

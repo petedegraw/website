@@ -14,17 +14,18 @@ const INTRO = {
       text: 'who is Pete',
       titles: [],
     },
-    {
-      id: 3,
-      link: '',
-      text: '???',
-      titles: [
-        'you really should click this!',
-        'it\'s tempting to click this',
-        'you really want to click this, don\'t you?',
-        'gotta wonder what this does when you click it'
-      ],
-    }
+    // {
+    //   id: 3,
+    //   link: '',
+    //   text: '???',
+    //   titles: [
+    //     'you really should click this!',
+    //     'it\'s tempting to click this',
+    //     'you really want to click this, don\'t you?',
+    //     'gotta wonder what this does when you click it',
+    //     'tryyyyyyyy iiiiiiiiit'
+    //   ],
+    // }
   ]
 }
 export default INTRO;
