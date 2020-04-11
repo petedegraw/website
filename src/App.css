@@ -66,4 +66,10 @@ a {
   flex-flow: row nowrap;
   place-content: stretch flex-start;
   align-items: stretch;
+  flex-direction: column;
+}
+@media (min-width: 900px) {
+  .view {
+    flex-direction: row;
+  }
 }

@@ -6,7 +6,7 @@
   padding: 30px;
   margin: 0 auto;
 }
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .Roles {
     width: 70%;
   }
