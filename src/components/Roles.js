@@ -3,6 +3,7 @@ import './Roles.css';
 import { defaults, Radar } from 'react-chartjs-2';
 import sizeMe from 'react-sizeme';
 import CONTENT from '../data/Content';
+import { motion, AnimatePresence } from 'framer-motion';
 
 function Roles(props) {
   const { width } = props.size;
@@ -59,19 +60,32 @@ function Roles(props) {
   }
 
   const handleClick = event => {
-    const val = CONTENT.roles_machine[event[0]._index];
-    console.log(val);
-    return val;
+    if (event[0] !== undefined) {
+      const val = CONTENT.roles_machine[event[0]._index];
+      console.log(val);
+      return val;
+    }
   }
 
   return (
-    <div className='Roles'>
-      <Radar
-        data={chartData}
-        options={chartOptions}
-        onElementsClick={(event) => handleClick(event)}
-      />
-    </div>
+    <AnimatePresence>
+      <motion.div
+        className='Roles'
+        // whileHover={{ scale: 10, rotate: 360 }}
+        // whileTap={{ scale: 0.6, rotate: -360, borderRadius: "100%" }}
+        transition={{ delay: .3, duration: 3, mass: .75, type: 'spring' }}
+        initial={{ scale: 0 }}
+        animate={{ scale: 1 }}
+        exit={{ scale: 0 }}
+      >
+        <Radar
+          data={chartData}
+          options={chartOptions}
+          onElementsClick={(event) => handleClick(event)}
+          className='chart'
+        />
+      </motion.div>
+    </AnimatePresence>
   );
 }
 export default sizeMe({ monitorHeight: true })(Roles);
