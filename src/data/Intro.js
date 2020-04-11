@@ -4,13 +4,13 @@ const INTRO = {
   ctas: [
     {
       id: 1,
-      link: '',
+      link: '/web',
       text: 'see web stuff',
       titles: [],
     },
     {
       id: 2,
-      link: '',
+      link: '/about',
       text: 'who is Pete',
       titles: [],
     },

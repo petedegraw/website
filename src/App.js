@@ -1,13 +1,28 @@
 import React from 'react';
 import './App.css';
 import Intro from './components/Intro';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from 'react-router-dom';
 
-function App() {
+export default function App() {
   return (
-    <div className='App'>
-      <Intro />
-    </div>
+    <Router>
+      <div className='App'>
+        <Switch>
+          <Route path='/web'>
+            <p>web</p>
+          </Route>
+          <Route path='/about'>
+            <p>pete</p>
+          </Route>
+          <Route path='/'>
+            <Intro />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
-
-export default App;
