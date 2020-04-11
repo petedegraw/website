@@ -1,14 +1,15 @@
 import React from 'react';
 import './Intro.css';
+import './Web.css';
 import CTA from './CTA';
-import INTRO from '../data/Intro';
+import WEB from '../data/Web';
 
 export default () => (
-  <div className='Intro'>
-    <h1 className='home'>{INTRO.heading}</h1>
-    <p className='lead'>{INTRO.subhead}</p>
+  <div className='Intro Web'>
+    <h1>{WEB.heading}</h1>
+    <p className='lead'>{WEB.subhead}</p>
     <p>
-      {INTRO.ctas.map(cta => {
+      {WEB.ctas.map(cta => {
         let currentTitle = '';
         const randomTitle = (titles) => {
           currentTitle = titles[Math.floor(Math.random() * titles.length)];

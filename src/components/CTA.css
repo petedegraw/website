@@ -6,7 +6,7 @@
   min-width: 180px;
   margin-right: 2em;
   text-decoration: none;
-  transition: all ease 150ms;
+  transition: all 150ms ease;
   position: relative;
 }
 .title {
@@ -17,16 +17,17 @@
   font-family: 'Colfax Regular';
   min-width: 1000px;
   left: 0;
-  transition: all ease 150ms;
+  transition: all 150ms ease-in-out 200ms;
 }
 .CTA:hover .title {
   font-size: .625em;
+  transition: all 150ms ease-in-out 350ms;
 }
 .CTA:after {
   content: '›';
   display: inline-block;
   transform: translateX(.25em);
-  transition: transform ease-in-out 150ms;
+  transition: transform 150ms ease-in-out;
 }
 .CTA:hover:after {
   transform: translateX(.5em);

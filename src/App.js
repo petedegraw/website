@@ -1,11 +1,13 @@
 import React from 'react';
 import './App.css';
-import Intro from './components/Intro';
 import {
   BrowserRouter as Router,
   Switch,
   Route
 } from 'react-router-dom';
+import Intro from './components/Intro';
+import Web from './components/Web';
+import About from './components/About';
 
 export default function App() {
   return (
@@ -13,10 +15,10 @@ export default function App() {
       <div className='App'>
         <Switch>
           <Route path='/web'>
-            <p>web</p>
+            <Web />
           </Route>
           <Route path='/about'>
-            <p>pete</p>
+            <About />
           </Route>
           <Route path='/'>
             <Intro />
