@@ -61,13 +61,14 @@ function Roles(props) {
     }
   }
 
-  const handleClick = event => {
+  const handleClick = () => {
+    // controls.set({ opacity: 0 })
     history.push('/web/portfolio');
-    if (event[0] !== undefined) {
-      const val = CONTENT.roles_machine[event[0]._index];
-      console.log(val);
-      return val;
-    }
+    // if (event[0] !== undefined) {
+    //   const val = CONTENT.roles_machine[event[0]._index];
+    //   console.log(val);
+    //   return val;
+    // }
   }
 
   return (
