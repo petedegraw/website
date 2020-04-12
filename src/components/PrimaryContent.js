@@ -10,8 +10,8 @@ export default (props) => {
         <motion.div
           className={'PrimaryContent ' + data.class_name}
           transition={{ delay: 0, duration: .75, ease: 'easeInOut' }}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
+          initial={{ opacity: 0, scale: .95 }}
+          animate={{ opacity: 1, scale: 1 }}
         >
           <h1 className={data.class_name}>{data.copy.heading}</h1>
           <p className='lead'>{data.copy.subhead}</p>

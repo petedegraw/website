@@ -16,4 +16,14 @@
     padding: 30px;
     width: 70%;
   }
+  .Roles canvas {
+    transition: transform 1s ease;
+  }
+  .Roles.animate canvas {
+    transform: rotate(360deg);
+    transition: transform 1s ease;
+  }
+  .Roles.animate.animate-scale canvas {
+    transform: rotate(360deg) scale(3);
+  }
 }

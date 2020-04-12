@@ -9,6 +9,7 @@ import { useHistory } from 'react-router-dom';
 function Roles(props) {
   const { width } = props.size;
   const history = useHistory();
+  const chartRef = React.createRef();
   
   defaults.global.animation.easing = 'easeInOutExpo';
   defaults.global.tooltips = false;
@@ -62,13 +63,13 @@ function Roles(props) {
   }
 
   const handleClick = () => {
-    // controls.set({ opacity: 0 })
-    history.push('/web/portfolio');
-    // if (event[0] !== undefined) {
-    //   const val = CONTENT.roles_machine[event[0]._index];
-    //   console.log(val);
-    //   return val;
-    // }
+    chartRef.current.classList = 'Roles animate';
+    setTimeout(() => {
+      chartRef.current.classList = 'Roles animate animate-scale';
+      setTimeout(() => {
+        history.push('/web/portfolio');
+      }, 1000);
+    }, 1000);
   }
 
   return (
@@ -81,6 +82,7 @@ function Roles(props) {
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         exit={{ scale: 0 }}
+        ref={chartRef}
       >
         <Radar
           data={chartData}
