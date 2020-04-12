@@ -60,6 +60,10 @@ a {
   color: #983fec;
 }
 
+ul {
+  margin-left: -40px;
+}
+
 .view {
   display: flex;
   flex: 1 1 0%;
@@ -71,5 +75,9 @@ a {
 @media (min-width: 900px) {
   .view {
     flex-direction: row;
+  }
+  .App .PrimaryContent,
+  .App .SecondaryContent {
+    width: 50%;
   }
 }

@@ -79,20 +79,12 @@ const CONTENT = {
         ctas: [
           {
             id: 1,
-            link: '/web/portfolio',
-            text: 'see some code',
-            titles: [
-              'web portfolio'
-            ],
-          },
-          {
-            id: 2,
             link: '/contact',
             text: 'contact',
             titles: []
           },
           {
-            id: 3,
+            id: 2,
             link: '/',
             text: 'enough of this',
             titles: [
@@ -128,7 +120,27 @@ const CONTENT = {
       }
     },
   ],
-  ctas: [
+  contact_ctas: [
+    {
+      id: 1,
+      link: 'https://www.linkedin.com/in/pdegraw/',
+      text: 'linkedin',
+      titles: ['I use this more than twitter']
+    },
+    {
+      id: 2,
+      link: 'https://twitter.com/petedegraw',
+      text: 'twitter',
+      titles: ['I used linkedin more often']
+    },
+    {
+      id: 3,
+      link: 'mailto:petedegraw@gmail.com',
+      text: 'email',
+      titles: ['I check email daily']
+    }
+  ],
+  fun_ctas: [
     {
       id: 1,
       link: '#',

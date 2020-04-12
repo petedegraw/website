@@ -4,11 +4,9 @@ import { defaults, Radar } from 'react-chartjs-2';
 import sizeMe from 'react-sizeme';
 import CONTENT from '../data/Content';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useHistory } from 'react-router-dom';
 
 function Roles(props) {
   const { width } = props.size;
-  const history = useHistory();
   const chartRef = React.createRef();
   
   defaults.global.animation.easing = 'easeInOutExpo';
@@ -62,28 +60,18 @@ function Roles(props) {
     }
   }
 
-  const handleClick = () => {
-    chartRef.current.classList = 'Roles animate';
-    setTimeout(() => {
-      chartRef.current.classList = 'Roles animate animate-scale';
-      history.push('/web/portfolio');
-    }, 750);
-  }
-
   return (
     <AnimatePresence>
       <motion.div
         className='Roles'
-        transition={{ delay: .3, duration: 3, mass: .75, type: 'spring' }}
-        initial={{ scale: 0 }}
-        animate={{ scale: 1 }}
-        exit={{ scale: 0 }}
+        transition={{ delay: 0, duration: .75, ease: 'easeInOut' }}
+        initial={{ opacity: 0, scale: .95 }}
+        animate={{ opacity: 1, scale: 1 }}
         ref={chartRef}
       >
         <Radar
           data={chartData}
           options={chartOptions}
-          onElementsClick={(event) => handleClick(event)}
           className='chart'
         />
       </motion.div>

@@ -1,0 +1,14 @@
+.SecondaryContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+}
+
+@media (min-width: 900px) {
+  .SecondaryContent {
+    min-height: 80vh;
+    padding-left: 120px;
+    max-width: 40vw;
+  }
+}
