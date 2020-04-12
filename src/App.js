@@ -8,6 +8,8 @@ import {
 import PrimaryContent from './components/PrimaryContent';
 import CONTENT from './data/Content';
 import Roles from './components/Roles';
+import SecondaryContent from './components/SecondaryContent';
+import Contact from './components/Contact';
 
 export default function App() {
   const getData = (str) => CONTENT.pages.find(p => p.page === str);
@@ -23,6 +25,14 @@ export default function App() {
           </Route>
           <Route path='/about'>
             <PrimaryContent data={getData('about')} />
+          </Route>
+          <Route path='/contact'>
+            <div className='view'>
+              <PrimaryContent data={getData('contact')} />
+              <SecondaryContent>
+                <Contact />
+              </SecondaryContent>
+            </div>
           </Route>
           <Route path='/'>
             <PrimaryContent data={getData('intro')} />

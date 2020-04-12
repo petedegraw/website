@@ -1,5 +1,5 @@
 .PrimaryContent {
-  min-height: 80vh;
+  min-height: 40vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,6 +20,9 @@
   .PrimaryContent.web {
     width: 40%;
     max-width: auto;
+  }
+  .PrimaryContent.about {
+    max-width: 50vw;
   }
 }
 h1.about {

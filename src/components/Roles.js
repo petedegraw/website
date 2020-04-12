@@ -7,6 +7,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 function Roles(props) {
   const { width } = props.size;
+  const chartRef = React.createRef();
   
   defaults.global.animation.easing = 'easeInOutExpo';
   defaults.global.tooltips = false;
@@ -59,29 +60,18 @@ function Roles(props) {
     }
   }
 
-  const handleClick = event => {
-    if (event[0] !== undefined) {
-      const val = CONTENT.roles_machine[event[0]._index];
-      console.log(val);
-      return val;
-    }
-  }
-
   return (
     <AnimatePresence>
       <motion.div
         className='Roles'
-        // whileHover={{ scale: 10, rotate: 360 }}
-        // whileTap={{ scale: 0.6, rotate: -360, borderRadius: "100%" }}
-        transition={{ delay: .3, duration: 3, mass: .75, type: 'spring' }}
-        initial={{ scale: 0 }}
-        animate={{ scale: 1 }}
-        exit={{ scale: 0 }}
+        transition={{ delay: 0, duration: .75, ease: 'easeInOut' }}
+        initial={{ opacity: 0, scale: .95 }}
+        animate={{ opacity: 1, scale: 1 }}
+        ref={chartRef}
       >
         <Radar
           data={chartData}
           options={chartOptions}
-          onElementsClick={(event) => handleClick(event)}
           className='chart'
         />
       </motion.div>
