@@ -8,6 +8,7 @@ import {
 import PrimaryContent from './components/PrimaryContent';
 import CONTENT from './data/Content';
 import Roles from './components/Roles';
+import Portfolio from './components/Portfolio';
 
 export default function App() {
   const getData = (str) => CONTENT.pages.find(p => p.page === str);
@@ -16,7 +17,7 @@ export default function App() {
       <div className='App'>
         <Switch>
         <Route exact path='/web/portfolio'>
-          <p>portfolio</p>
+          <Portfolio data={getData('portfolio')} />
         </Route>
           <Route path='/web'>
             <div className='view'>

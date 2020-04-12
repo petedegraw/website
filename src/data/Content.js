@@ -13,7 +13,7 @@ const CONTENT = {
           {
             id: 1,
             link: '/web',
-            text: 'see web stuff',
+            text: 'web development',
             titles: []
           },
           {
