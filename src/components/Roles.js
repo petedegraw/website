@@ -66,18 +66,14 @@ function Roles(props) {
     chartRef.current.classList = 'Roles animate';
     setTimeout(() => {
       chartRef.current.classList = 'Roles animate animate-scale';
-      setTimeout(() => {
-        history.push('/web/portfolio');
-      }, 1000);
-    }, 1000);
+      history.push('/web/portfolio');
+    }, 750);
   }
 
   return (
     <AnimatePresence>
       <motion.div
         className='Roles'
-        // whileHover={{ scale: 10, rotate: 360 }}
-        // whileTap={{ scale: 0.6, rotate: -360, borderRadius: "100%" }}
         transition={{ delay: .3, duration: 3, mass: .75, type: 'spring' }}
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
