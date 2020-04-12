@@ -5,7 +5,7 @@ import CTA from './CTA';
 export default (props) => {
   const { data } = props;
   return (
-    <div className={'PrimaryContent ' + data.class_name}>
+    <div className={'Porfolio ' + data.class_name}>
       <h1 className={data.class_name}>{data.copy.heading}</h1>
       <p className='lead'>{data.copy.subhead}</p>
       <p>
@@ -21,7 +21,6 @@ export default (props) => {
               href={cta.link}
               hover={() => randomTitle(cta.titles)}
               title={currentTitle === '' ? randomTitle(cta.titles) : currentTitle}
-              back={cta.link === '/' ? true : false}
             >
               {cta.text}
             </CTA>

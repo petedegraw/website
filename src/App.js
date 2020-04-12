@@ -15,6 +15,9 @@ export default function App() {
     <Router>
       <div className='App'>
         <Switch>
+        <Route exact path='/web/portfolio'>
+          <p>portfolio</p>
+        </Route>
           <Route path='/web'>
             <div className='view'>
               <PrimaryContent data={getData('web')} />
@@ -23,6 +26,9 @@ export default function App() {
           </Route>
           <Route path='/about'>
             <PrimaryContent data={getData('about')} />
+          </Route>
+          <Route path='/contact'>
+            <PrimaryContent data={getData('contact')} />
           </Route>
           <Route path='/'>
             <PrimaryContent data={getData('intro')} />

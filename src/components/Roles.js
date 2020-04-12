@@ -4,9 +4,11 @@ import { defaults, Radar } from 'react-chartjs-2';
 import sizeMe from 'react-sizeme';
 import CONTENT from '../data/Content';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useHistory } from 'react-router-dom';
 
 function Roles(props) {
   const { width } = props.size;
+  const history = useHistory();
   
   defaults.global.animation.easing = 'easeInOutExpo';
   defaults.global.tooltips = false;
@@ -60,6 +62,7 @@ function Roles(props) {
   }
 
   const handleClick = event => {
+    history.push('/web/portfolio');
     if (event[0] !== undefined) {
       const val = CONTENT.roles_machine[event[0]._index];
       console.log(val);

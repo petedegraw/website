@@ -47,6 +47,27 @@ const CONTENT = {
       }
     },
     {
+      page: 'contact',
+      url: '/contact',
+      title: 'Contact Pete',
+      description: 'a way to get in touch',
+      class_name: 'contact',
+      copy: {
+        heading: 'tell me about you',
+        subhead: 'now that I know about you, please tell me about you',
+        ctas: [
+          {
+            id: 1,
+            link: '/',
+            text: 'not today',
+            titles: [
+              'back'
+            ],
+          }
+        ]
+      }
+    },
+    {
       page: 'web',
       url: '/web',
       title: 'web developer',
@@ -54,10 +75,24 @@ const CONTENT = {
       class_name: 'web',
       copy: {
         heading: 'I\'m a web developer',
-        subhead: 'with years of experience along the progressive road of web development',
+        subhead: 'years of experience along the progressive road of web development',
         ctas: [
           {
             id: 1,
+            link: '/web/portfolio',
+            text: 'see some code',
+            titles: [
+              'web portfolio'
+            ],
+          },
+          {
+            id: 2,
+            link: '/contact',
+            text: 'contact',
+            titles: []
+          },
+          {
+            id: 3,
             link: '/',
             text: 'enough of this',
             titles: [
@@ -66,7 +101,32 @@ const CONTENT = {
           }
         ]
       }
-    }
+    },
+    {
+      page: 'portfolio',
+      url: '/web/portfolio',
+      title: 'Pete DeGraw | Portfolio',
+      description: 'Web development portfolio',
+      class_name: 'portfolio',
+      copy: {
+        heading: 'web development portfolio',
+        subhead: 'some slices of the internet I\'ve contributed to',
+        ctas: [
+          {
+            id: 1,
+            link: '/contact',
+            text: 'contact',
+            titles: []
+          },
+          {
+            id: 2,
+            link: '/web',
+            text: 'back to web',
+            titles: []
+          }
+        ]
+      }
+    },
   ],
   ctas: [
     {

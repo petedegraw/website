@@ -3,15 +3,19 @@ import './CTA.css';
 import { Link } from 'react-router-dom';
 
 export default (props) => {
-  const classes = `CTA ${props.primary ? 'primary' : 'default'}`;
+  const classes = `CTA ${props.back ? 'back' : 'default'}`;
   return (
-    <Link
-      className={classes}
-      to={props.href}
-      onMouseOver={props.hover}
+    <>
+      {props.back ? <br/> : ''}
+      <Link
+        className={classes}
+        to={props.href}
+        onMouseOver={props.hover}
+        style={{'display': props.back ? 'block' : '' }}
       >
-      {props.children}
-      {props.title ? <span className='title'> {props.title}</span> : ''}
-    </Link>
+        {props.children}
+        {props.title ? <span className='title'> {props.title}</span> : ''}
+      </Link>
+    </>
   )
 }
