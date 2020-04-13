@@ -65,19 +65,17 @@ function Roles(props) {
   const handleClick = () => {
     chartRef.current.classList = 'Roles animate';
     setTimeout(() => {
-      chartRef.current.classList = 'Roles animate animate-scale';
       history.push('/web/portfolio');
-    }, 750);
+    }, 1250);
   }
 
   return (
     <AnimatePresence>
       <motion.div
         className='Roles'
-        transition={{ delay: .3, duration: 3, mass: .75, type: 'spring' }}
-        initial={{ scale: 0 }}
-        animate={{ scale: 1 }}
-        exit={{ scale: 0 }}
+        transition={{ delay: 0, duration: .75, ease: 'easeInOut' }}
+        initial={{ opacity: 0, scale: .95 }}
+        animate={{ opacity: 1, scale: 1 }}
         ref={chartRef}
       >
         <Radar

@@ -16,12 +16,26 @@
     padding: 30px;
     width: 70%;
   }
-  .Roles canvas {
-    transition: transform 3s ease-in-out;
-    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.Roles.animate canvas {
+  animation: animation 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation-iteration-count: initial;
+  animation-direction: normal;
+}
+
+@keyframes animation {
+  from {
+    scale: 1;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
-  .Roles.animate canvas {
-    transform: rotate(-720deg) scale(0) translateX(calc(200vw / 2));
-    transition: transform 1s ease;
+  to {
+    transform: translate(-50%, -50%) rotate(-520deg) scale(0);
+    position: fixed;
+    top: 50%;
+    left: 50%;
   }
 }
