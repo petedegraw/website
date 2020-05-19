@@ -133,12 +133,12 @@ const CONTENT = {
       text: 'twitter',
       titles: ['I used linkedin more often']
     },
-    {
-      id: 3,
-      link: 'mailto:petedegraw@gmail.com',
-      text: 'email',
-      titles: ['I check email daily']
-    }
+    // {
+    //   id: 3,
+    //   link: 'mailto:petedegraw@gmail.com',
+    //   text: 'email',
+    //   titles: ['I check email daily']
+    // }
   ],
   fun_ctas: [
     {
