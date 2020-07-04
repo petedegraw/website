@@ -129,7 +129,7 @@ const CONTENT = {
     },
     {
       id: 2,
-      link: 'https://twitter.com/petedegraw',
+      link: 'https://twitter.com/somepete',
       text: 'twitter',
       titles: ['I used linkedin more often']
     },
