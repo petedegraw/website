@@ -15,6 +15,7 @@ export default (props) => {
         >
           <h1 className={data.class_name}>{data.copy.heading}</h1>
           <p className='lead'>{data.copy.subhead}</p>
+          {data.copy.body ? <p>{data.copy.body}</p> : '' }
           <p>
             {data.copy.ctas.map(cta => {
               let currentTitle = '';

@@ -33,7 +33,7 @@ const CONTENT = {
       class_name: 'about',
       copy: {
         heading: 'it\'s difficult to describe yourself... uh',
-        subhead: 'dad, husband, avid coffee drinker, enthusiastic planner (most of the time), crazy about guitar tone, and really like music',
+        subhead: 'engineer, enthusiastic planner (most of the time), avid coffee drinker, crazy about guitar tone, former pioneer of music festival backline, and family man.',
         ctas: [
           {
             id: 1,
@@ -75,7 +75,8 @@ const CONTENT = {
       class_name: 'web',
       copy: {
         heading: 'I\'m a web developer',
-        subhead: 'years of experience along the progressive road of web development',
+        subhead: 'experience along the progressive road of development for the web',
+        body: 'I focus on the details, the people, and the finished product. Though not seen by the end user, I value code quality and an effective process.',
         ctas: [
           {
             id: 1,

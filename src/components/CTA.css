@@ -2,11 +2,12 @@
   color: #983fec;
   font-family: 'Colfax Bold';
   font-size: 1.3em;
-  margin-right: .75em;
+  margin: 0 .75em .75em 0;
   min-width: 180px;
   text-decoration: none;
   transition: all 150ms ease;
   position: relative;
+  display: block;
 }
 .title {
   position: absolute;
@@ -35,7 +36,7 @@
 }
 .CTA.default {
   color: #983fec;
-  padding: .625em .5em .625em 0;
+  /* padding: .625em .5em .625em 0; */
 }
 .CTA.default:hover {
   color: #ec3fa4;
