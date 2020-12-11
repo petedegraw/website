@@ -18,7 +18,7 @@ function Roles(props) {
   const chartData = {
     labels: CONTENT.roles_human,
     datasets: [{
-      data: [8,6,7,5,7],
+      data: [9,7,8,6,8],
       backgroundColor: 'rgba(255, 255, 255, 0.33)',
       borderColor: '#ec3fa4',
       borderWidth: 3,

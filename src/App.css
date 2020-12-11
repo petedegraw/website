@@ -47,14 +47,14 @@ h1 {
 }
 
 p {
-  margin: 0 0 .5em;
   line-height: 1.4em;
+  margin: 0 0 .5em;
 }
 
 .lead {
   font-size: 1.444em;
-  margin-bottom: .75em;
   line-height: 1.25em;
+  margin-bottom: .75em;
 }
 
 a {
@@ -66,12 +66,12 @@ ul {
 }
 
 .view {
-  display: flex;
-  flex: 1 1 0%;
-  flex-flow: row nowrap;
-  place-content: stretch flex-start;
   align-items: stretch;
+  display: flex;
+  flex: 1 1 0;
   flex-direction: column;
+  flex-flow: row nowrap;
+  /*place-content: stretch flex-start;*/
 }
 @media (min-width: 900px) {
   .view {
