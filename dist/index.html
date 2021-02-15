@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pete</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
+        <link rel="icon" type="image/png" sizes="48x48" href="favicon.ico" />
+        <link href="main.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="visually-hidden-focusable" role="contentinfo">
+            <a href="#content">Skip to main content</a>
+        </div>
+        <main role="main" id="content">
+            <section id="home">
+                <div class="content">
+                    <h1>hi, I'm Pete</h1>
+                    <p>you found me, what would you like to know?</p>
+                    <p><a href="#dev">web development</a><br /><a href="#about">other things</a></p>
+                </div>
+            </section>
+            <section id="about">
+                <div class="content">
+                    <h1>it's difficult to describe yourself... uh</h1>
+                    <p>
+                        engineer, enthusiastic planner (most of the time), automator of the boring
+                        stuff, avid coffee drinker, crazy about guitar tone, former pioneer of music
+                        festival backline production, and family man.
+                    </p>
+                    <p>
+                        <a href="#home" aria-label="link to home" title="link to home"
+                            >sounds good, all done</a
+                        >
+                    </p>
+                </div>
+            </section>
+            <section id="contact">
+                <div class="content">
+                    <h1>tell me about you</h1>
+                    <p>now that I know about you, please tell me about you</p>
+                    <p>
+                        <a href="https://www.linkedin.com/in/pdegraw/">linkedin</a>
+                        <a href="https://twitter.com/somepete">twitter</a>
+                    </p>
+                    <p><a href="#home" aria-label="link to home" title="link to home">back</a></p>
+                </div>
+            </section>
+            <section id="dev">
+                <div class="content">
+                    <h1>I'm a web developer</h1>
+                    <p>
+                        I focus on the details, the people, and the finished product. The ideal user
+                        experience comes from proper accessibility build on semantic and SEO
+                        friendly markup.
+                    </p>
+                    <!-- <p>
+                        I focus on the details, the people, and the finished product. Accessibility from ideal semantic and SEO friendly markup create the best user experience.
+                    </p> -->
+                    <ul class="highlights">
+                        <li data-highlight="9">Front-End</li>
+                        <li data-highlight="8">Full Stack</li>
+                        <li data-highlight="6">Back End</li>
+                        <li data-highlight="5">Product Owner</li>
+                    </ul>
+                    <p><a href="#home" aria-label="link to home" title="link to home">back</a></p>
+                </div>
+            </section>
+        </main>
+        <script src="bundle.js"></script>
+    </body>
+</html>
