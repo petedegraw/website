@@ -1,6 +1,7 @@
 @import url('http://fonts.cdnfonts.com/css/cartogothic-std');
 :root {
     --font-family: Avenir, 'CartoGothic Std', sans-serif;
+    --bg-body: #16161a;
 }
 * {
     margin: 0;
@@ -9,7 +10,7 @@
     color: inherit;
 }
 html {
-    background: #16161a;
+    background: var(--bg-body);
     font-size: 20px;
 }
 body {
@@ -76,7 +77,7 @@ li {
     }
 }
 section {
-    background: transparent;
+    background: var(--bg-body);
     color: white;
     display: flex;
     flex-flow: column wrap;
