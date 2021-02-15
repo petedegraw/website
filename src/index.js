@@ -1,6 +1,9 @@
 import './styles.scss';
 
-window.onload = () => document.querySelector('section').classList.add('active');
+window.onload = () => {
+    document.querySelector('body').classList.remove('no-js');
+    document.querySelector('section').classList.add('active');
+};
 let activeSection = 'home';
 let devSection = document.getElementById('dev');
 document.body.addEventListener('click', function (e) {

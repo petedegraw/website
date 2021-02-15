@@ -1,0 +1,9 @@
+{
+  "actions" : {
+    "build" : {
+      "enabled" : true,
+      "script" : "#!\/bin\/sh\nnpm run build-prod"
+    }
+  },
+  "identifier" : "3BA0110D-2C7F-4AAF-A3F6-24DB18372902"
+}

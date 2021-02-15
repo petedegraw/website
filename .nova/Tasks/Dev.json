@@ -1,0 +1,9 @@
+{
+  "actions" : {
+    "build" : {
+      "enabled" : true,
+      "script" : "#!\/bin\/sh\nnpm run build-dev"
+    }
+  },
+  "identifier" : "A24C45CA-C4D1-406C-9FFD-8F891A9B32B9"
+}
