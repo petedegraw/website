@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Pete</title>
         <meta charset="utf-8" />
+        <title>Pete</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
         <link rel="icon" type="image/png" sizes="48x48" href="favicon.ico" />
         <link href="main.css" rel="stylesheet" />
@@ -11,12 +11,21 @@
         <div class="visually-hidden-focusable" role="contentinfo">
             <a href="#content">Skip to main content</a>
         </div>
-        <main role="main" id="content">
+        <nav class="visually-hidden-focusable">
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#dev">web development</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+        <main aria-label="content" id="content">
             <section id="home">
                 <div class="content">
                     <h1>hi, I'm Pete</h1>
                     <p>you found me, what would you like to know?</p>
-                    <p><a href="#dev">web development</a><br /><a href="#about">other things</a></p>
+                    <p><a href="#dev">web development</a></p>
+                    <p><a href="#about">other things</a></p>
                 </div>
             </section>
             <section id="about">
@@ -31,6 +40,8 @@
                         <a href="#home" title="link to home" aria-label="link to home"
                             >sounds good, all done</a
                         >
+                    </p>
+                    <p>
                         <a href="#contact" title="link to contact" aria-label="link to contact"
                             >contact me</a
                         >
@@ -42,8 +53,8 @@
                     <h1>tell me about you</h1>
                     <p>now that I know about you, please tell me about you</p>
                     <p>
-                        <a href="https://www.linkedin.com/in/pdegraw/">linkedin</a>
-                        <a href="https://twitter.com/somepete">twitter</a>
+                        <a target="blank" href="https://www.linkedin.com/in/pdegraw/">linkedin</a>
+                        or <a target="blank" href="https://twitter.com/somepete">twitter</a>
                     </p>
                     <p>
                         <a href="#home" title="link to home" aria-label="link to home">all done</a>
