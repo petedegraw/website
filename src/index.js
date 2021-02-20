@@ -7,7 +7,7 @@ window.onload = () => {
 let activeSection = 'home';
 let devSection = document.getElementById('dev');
 document.body.addEventListener('click', function (e) {
-    if (e.target && e.target.nodeName == 'A') {
+    if (e.target && e.target.nodeName == 'A' && e.target.href.includes('#')) {
         e.preventDefault();
         activeSection = e.target.href.split('#')[1];
         setTimeout(function () {
