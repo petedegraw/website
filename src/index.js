@@ -1,7 +1,7 @@
 import './styles.scss';
 
 let activeSection = 'home';
-let devSection = document.getElementById('dev');
+const devSection = document.getElementById('dev');
 
 function isDevSectionActive() {
     return Array.from(document.getElementById('dev').classList).includes('active') ? true : false;
