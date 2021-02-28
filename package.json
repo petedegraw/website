@@ -8,7 +8,7 @@
     "license": "ISC",
     "scripts": {
         "clean": "rm dist/bundle.js",
-		"start": "webpack serve",
+        "start": "webpack serve",
         "build-dev": "webpack --mode development",
         "build-prod": "webpack --mode production"
     },

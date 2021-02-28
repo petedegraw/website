@@ -16,12 +16,22 @@ html {
 body {
     color: #94a1b2;
     font-family: var(--font-family);
-    line-height: 1.625em;
+    line-height: 1.5em;
 }
 h1 {
     font-size: 2rem;
     color: #fffffe;
     line-height: 1.25em;
+}
+h2 {
+    margin-bottom: 1em;
+    margin-top: 1.5em;
+}
+@media screen and (max-width: 899px) {
+    h1 {
+        font-size: 1.5rem;
+        line-height: 1.15em;
+    }
 }
 a {
     color: #5acdf0;
@@ -76,7 +86,6 @@ li {
         display: grid;
         grid-template-rows: 1fr;
         grid-template-areas: 'section';
-        overflow: hidden;
     }
 }
 section {

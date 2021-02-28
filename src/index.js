@@ -44,4 +44,5 @@ document.body.addEventListener('click', (e) => {
 window.onload = () => {
     document.querySelector('body').classList.remove('no-js');
     document.querySelector('section').classList.add('active');
+    console.log('woohoo, you opened the JavaScript console! zero frameworks here.')
 };
