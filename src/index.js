@@ -37,6 +37,7 @@ document.body.addEventListener('click', (e) => {
             document.querySelector('section.active').classList.remove('active');
             document.getElementById(activeSection).classList.add('active');
             toggleListItemAnimation();
+            document.querySelector('section.active').scrollTo(0, 0);
         }, 300);
     }
 });
@@ -44,5 +45,5 @@ document.body.addEventListener('click', (e) => {
 window.onload = () => {
     document.querySelector('body').classList.remove('no-js');
     document.querySelector('section').classList.add('active');
-    console.log('woohoo, you opened the JavaScript console! zero frameworks here.')
+    console.log('woohoo, you opened the JavaScript console! zero frameworks here.');
 };

@@ -17,6 +17,7 @@ body {
     color: #94a1b2;
     font-family: var(--font-family);
     line-height: 1.5em;
+    overflow: hidden;
 }
 h1 {
     font-size: 2rem;
@@ -204,6 +205,9 @@ section {
 
 // no JS
 .no-js {
+    body {
+        overflow-y: scroll;
+    }
     main {
         display: block;
         overflow-y: scroll;
