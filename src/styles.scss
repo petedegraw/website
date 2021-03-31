@@ -133,9 +133,11 @@ section {
 }
 @media screen and (min-width: 900px) {
     section {
-        justify-content: center;
         &.active .content {
             transform: none;
+        }
+        &.center {
+            justify-content: center;
         }
     }
     .content {
