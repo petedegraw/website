@@ -30,6 +30,7 @@ const toggleListItemAnimation = () => {
 };
 
 document.body.addEventListener('click', (e) => {
+    // const isJavaScriptDisabled = !document.querySelector('body').classList.contains('no-js');
     if (e.target && e.target.nodeName == 'A' && e.target.href.includes('#')) {
         e.preventDefault();
         activeSection = e.target.href.split('#')[1];
