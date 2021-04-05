@@ -10,7 +10,7 @@
 }
 html {
     background: var(--bg-body);
-    font-size: 16px;
+    font-size: 20px;
 }
 body {
     color: #94a1b2;
@@ -102,6 +102,7 @@ section {
     width: 100vw;
     visibility: hidden;
     overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
     /* who */
     &.active:nth-child(2) {
         background: linear-gradient(to bottom left, rgb(28, 123, 123) 11.2%, rgb(51, 8, 103) 92.5%);
@@ -133,9 +134,6 @@ section {
     }
 }
 @media screen and (min-width: 900px) {
-    html {
-        font-size: 20px;
-    }
     section {
         &.active .content {
             transform: none;
