@@ -3,15 +3,12 @@ import './styles.scss';
 let activeSection = 'home';
 const devSection = document.getElementById('dev');
 
-const isDevSectionActive = () =>
-    Array.from(devSection.classList).includes('active') ? true : false;
+const isDevSectionActive = () => (Array.from(devSection.classList).includes('active') ? true : false);
 
 const toggleListItemAnimation = () => {
     const elToAnimate = '.highlights li';
     const elToAnimateArr = Array.from(document.querySelectorAll(elToAnimate));
-    const isAnimatedElActive = Array.from(document.querySelector(elToAnimate).classList).includes(
-        'animated'
-    );
+    const isAnimatedElActive = Array.from(document.querySelector(elToAnimate).classList).includes('animated');
     if (isDevSectionActive()) {
         elToAnimateArr.forEach((el, index) => {
             let value = el.getAttribute('data-highlight');
@@ -23,7 +20,7 @@ const toggleListItemAnimation = () => {
     } else if (isAnimatedElActive) {
         elToAnimateArr.forEach((el, index) => {
             let value = el.getAttribute('data-highlight');
-            el.style.width = 40 + '%';
+            el.style.width = 30 + '%';
             el.classList.remove('animated');
         });
     }
